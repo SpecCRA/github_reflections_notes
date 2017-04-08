@@ -17,14 +17,43 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	The good thing about a staging area is you get to compare with the diff command
+	differences between your working directory and staging area. Then you can also 
+	compare your staging area and your most recent commit in your repository. This
+	can help you look for certain bugs and let you choose again, what is logical for
+	you to change then commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	
+	Different languages
+	Different platforms - mobile or desktop
+	Testing new features without breaking the original
 
 How do the diagrams help you visualize the branch structure?
+
+	You'll be able to see which head and parent structures go together to track 
+	different versions of your program more easily. This will just make finding
+	different versions more logical than searching through the logs. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Merging branches combines code is alike and different in two versions. So
+	you'd effectively add say, two different features into one program. The same
+	one, really. 
+
+	It's represented in a diagram by a master branch pointing to both the merged
+	branch and the existing master branch. This is because the git log now has 
+	access to both histories, sorted by time committed. However, you can still
+	compare differences between each commits and their respective parent commits.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+	
+	When you do automatic merging, it's much easier to combine different versions
+	as opposed to running through all the diff notes. 
+
+	However, resolving little differences in code can get really confusing really
+	quickly.
